@@ -32,6 +32,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
+    "caniuse-lite": "^1.0.30001202",
     "del": "^3.0.0",
     "files-exist": "^1.1.0",
     "gulp": "^4.0.2",
