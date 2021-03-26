@@ -1,3 +1,3 @@
-export default function test(val = 'test') {
-    console.log(val)
+export default function test(){
+    console.log('test.js');
 }

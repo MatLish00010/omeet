@@ -32,7 +32,7 @@ global.blinker = {
     resolve: require('rollup-plugin-node-resolve'),
     commonjs: require('rollup-plugin-commonjs'),
   },
-  twigSettings: require('./twigSettings.js')
+  twigSettings: require('./twig-settings.js')
 };
 
 blinker.core.forEach(taskPath => {
@@ -47,16 +47,37 @@ blinker.core.errorHandler.initialize();
 
 blinker.gulp.task('dev', blinker.gulp.series(
   blinker.gulp.parallel('clean:dev'),
-  blinker.gulp.parallel('png-sprite', 'images:copy', 'fonts:copy', 'svg:sprite', 'svg:inline'),
-  blinker.gulp.parallel('templates', 'styles', 'scripts'),
+  blinker.gulp.parallel('png-sprite', 'images:copy', 'ajax:copy', 'fonts:copy', 'svg:sprite', 'svg:inline'),
+  blinker.gulp.parallel('templates', 'styles', 'scripts:libraries', 'scripts'),
   blinker.gulp.parallel('watch', 'serve')
 ));
 
+//build with html templates
+blinker.gulp.task('build-templates', blinker.gulp.series(
+    blinker.gulp.parallel('clean:full'),
+    blinker.gulp.parallel('png-sprite', 'images:copy', 'fonts:copy', 'svg:sprite', 'svg:inline'),
+    blinker.gulp.parallel('images:minify', 'templates', 'styles:build', 'scripts:libraries', 'scripts'),
+    blinker.gulp.parallel('dist', 'scripts:build'),
+    // blinker.gulp.parallel('styles:critical')
+));
+
+
+//build without html templates
 blinker.gulp.task('build', blinker.gulp.series(
   blinker.gulp.parallel('clean:build'),
   blinker.gulp.parallel('png-sprite', 'images:copy', 'fonts:copy', 'svg:sprite', 'svg:inline'),
-  blinker.gulp.parallel('images:minify', 'templates', 'styles:build', 'scripts'),
+  blinker.gulp.parallel('images:minify', 'styles:build', 'scripts:libraries', 'scripts'),
   blinker.gulp.parallel('dist', 'scripts:build'),
-  blinker.gulp.parallel('styles:inline'),
-  blinker.gulp.parallel('styles:critical')
+  // blinker.gulp.parallel('styles:inline'),
+  // blinker.gulp.parallel('styles:critical')
+));
+
+
+blinker.gulp.task('build-watch', blinker.gulp.series(
+    blinker.gulp.parallel('clean:build'),
+    blinker.gulp.parallel('png-sprite', 'images:copy', 'fonts:copy', 'svg:sprite', 'svg:inline'),
+    blinker.gulp.parallel('styles', 'scripts:libraries', 'scripts'),
+    blinker.gulp.parallel('images:minify', 'styles:build-watch'),
+    blinker.gulp.parallel('dist', 'scripts:build'),
+    blinker.gulp.parallel('watch', 'watch:build')
 ));

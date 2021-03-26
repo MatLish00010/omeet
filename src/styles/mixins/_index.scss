@@ -1,8 +1,13 @@
-@import "units";
+// functions
+@import "px-to-rem";
+@import "to-unit";
+
+// mixins:
 @import "breakpoints";
 @import "aspect-ratio";
-@import "paddingResponsive";
+@import "padding-responsive";
 @import "typographics";
+@import "image-fit";
 
 
 //icons sprites

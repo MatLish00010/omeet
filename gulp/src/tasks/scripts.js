@@ -1,8 +1,22 @@
 module.exports = () => {
 
+  blinker.gulp.task('scripts:libraries', (done) => {
+      if (blinker.config.javascript_libraries.length) {
+          return blinker.gulp.src(blinker.config.javascript_libraries)
+              .pipe(blinker.plugins.concat('libraries.js'))
+              .pipe(blinker.gulp.dest(blinker.config.temporaryPath + '/' + blinker.config.javascriptDirectory))
+      } else {
+          return blinker.gulp.src('./' + blinker.config.sourcePath + '/' + blinker.config.javascriptDirectory + '/libraries.js')
+              .pipe(blinker.gulp.dest(blinker.config.temporaryPath + '/' + blinker.config.javascriptDirectory));
+      }
+
+  });
+
   blinker.gulp.task('scripts', () => {
     if (blinker.config.use_babel) {
-      return blinker.gulp.src('./' + blinker.config.sourcePath + '/' + blinker.config.javascriptDirectory + '/*.js')
+      return blinker.gulp.src([
+          './' + blinker.config.sourcePath + '/' + blinker.config.javascriptDirectory + '/*.js',
+          '!./' + blinker.config.sourcePath + '/' + blinker.config.javascriptDirectory + '/libraries.js'])
         .pipe(blinker.plugins.rollup({ plugins: [
             blinker.plugins.rollup_babel(),
             blinker.plugins.resolve(),
@@ -24,7 +38,9 @@ module.exports = () => {
         .pipe(blinker.plugins.browser_sync.reload({stream: true}));
     }
 
-    return blinker.gulp.src('./' + blinker.config.sourcePath + '/' + blinker.config.javascriptDirectory + '/*.js')
+    return blinker.gulp.src([
+        './' + blinker.config.sourcePath + '/' + blinker.config.javascriptDirectory + '/*.js',
+        '!./' + blinker.config.sourcePath + '/' + blinker.config.javascriptDirectory + '/libraries.js',])
         .pipe(blinker.plugins.rollup({ plugins: [
             blinker.plugins.rollup_babel(),
             blinker.plugins.resolve(),
@@ -52,7 +68,11 @@ module.exports = () => {
       stream = stream.pipe(blinker.plugins.source_maps.init());
     }
 
-    if (blinker.config.concatenate_scripts) {
+    // if (blinker.config.concatenate_scripts) {
+    //   stream = stream.pipe(blinker.plugins.uglify());
+    // }
+
+    if (blinker.config.minify_scripts) {
       stream = stream.pipe(blinker.plugins.uglify());
     }
 

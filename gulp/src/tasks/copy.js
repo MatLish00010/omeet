@@ -18,6 +18,12 @@ module.exports = () => {
       .pipe(blinker.plugins.browser_sync.reload({stream: true}));
   });
 
+blinker.gulp.task('ajax:copy', function () {
+    return blinker.gulp.src(['./' + blinker.config.sourcePath + '/' + blinker.config.ajaxDirectory + '/**/*'])
+        .pipe(blinker.gulp.dest(blinker.config.temporaryPath + '/' + blinker.config.ajaxDirectory))
+        .pipe(blinker.plugins.browser_sync.reload({stream: true}));
+});
+
   blinker.gulp.task('dist', function () {
     return blinker.gulp.src(
       [

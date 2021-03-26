@@ -7,7 +7,7 @@ const createStyles = function(url){
 
 
 module.exports = {
-    data: require('./data.json'),
+    data: require('./twig-data.json'),
     functions: [
         {
             name: "_e",
@@ -38,6 +38,13 @@ module.exports = {
             name: "nameOfFilter",
             func: function (args) {
                 return "the filter";
+            }
+        },
+        {
+            name: "json_decode",
+            func: function (args) {
+                /* using: {% set pool_zones = pool_zones_json | json_decode %} */
+                return JSON.parse(args);
             }
         }
     ]
