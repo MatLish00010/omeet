@@ -1,0 +1,46 @@
+.quiz {
+  padding-top: px-to-rem(16);
+  padding-bottom: px-to-rem(16);
+
+  &__container {
+    @extend .l-container;
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: px-to-rem(25);
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-label {
+      transition: 0.3s;
+      cursor: pointer;
+      max-width: px-to-rem(100);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:first-child {
+        margin-right: px-to-rem(16);
+      }
+
+      &:hover {
+        background-color: $c-brand;
+        color: $c-white;
+      }
+
+      &:active {
+        background-color: $c-brand;
+        color: $c-white;
+      }
+    }
+
+    &-input {
+      display: none;
+    }
+  }
+}

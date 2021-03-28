@@ -20,13 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05d72460-bb6c-40f4-9964-90097377606b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/components/firebaseLogic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/sections/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/components/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/sections/quiz.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/sections/register.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/components/header.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sections/quiz.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sections/register.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/firebaseLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/firebaseLogic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/sections/form.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/layout/base.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/layout/base.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,5 +61,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="689" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616938532525">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1616938532525" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1616940468622">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1616940468622" />
   </component>
 </project>

@@ -1,0 +1,11 @@
+.header {
+  padding-top: px-to-rem(20);
+  padding-bottom: px-to-rem(20);
+
+  &__container {
+    @extend .l-container;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}

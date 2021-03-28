@@ -2,10 +2,7 @@
 
 
 {% block body %}
-    <form action="" class="form js-form">
-        <input type="text" name="Name" placeholder="Name" class="el-field form__input">
-        <input type="number" name="Phone" placeholder="Phone" class="el-field form__input">
-        <input type="email" name="email" placeholder="Email" class="el-field form__input">
-        <button class="btn" type="submit">Send</button>
-    </form>
+    {% include 'components/header.twig' %}
+{#    {% include 'sections/quiz.twig' %}#}
+    {% include 'sections/register.twig' %}
 {% endblock %}
