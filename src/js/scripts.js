@@ -3,40 +3,42 @@ import svg4everybody from 'svg4everybody';
 import scrollLock from 'scroll-lock';
 
 import testServerRequest from './components/test-server-request.js'
+import firebaseLogic from "./components/firebaseLogic";
 
 svg4everybody();
 
 window.app = {
-  header: null,
-  scroll: {
-    disable: scrollLock.disablePageScroll,
-    enable: scrollLock.enablePageScroll
-  },
-  setInert(...args) {
-    args.forEach(item => {
-      item.setAttribute('inert', true);
-    })
-  },
-  removeInert(...args) {
-    args.forEach(item => {
-      item.removeAttribute('inert');
-    })
-  },
+    header: null,
+    scroll: {
+        disable: scrollLock.disablePageScroll,
+        enable: scrollLock.enablePageScroll
+    },
+    setInert(...args) {
+        args.forEach(item => {
+            item.setAttribute('inert', true);
+        })
+    },
+    removeInert(...args) {
+        args.forEach(item => {
+            item.removeAttribute('inert');
+        })
+    },
 
-  initModule(Module, selector) {
-    if (!!selector) {
-      let blocks = Array.prototype.slice.call(document.querySelectorAll(selector));
-      blocks.forEach(block => {
-        new Module(block);
-      });
-    } else {
-      new Module();
+    initModule(Module, selector) {
+        if (!!selector) {
+            let blocks = Array.prototype.slice.call(document.querySelectorAll(selector));
+            blocks.forEach(block => {
+                new Module(block);
+            });
+        } else {
+            new Module();
+        }
+    },
+
+    init() {
+        app.initModule(testServerRequest, '.js-test-api');
+        firebaseLogic();
     }
-  },
-
-  init () {
-    app.initModule(testServerRequest, '.js-test-api');
-  }
 
 };
 

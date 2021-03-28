@@ -7,18 +7,22 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}{% endblock %}</title>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
     <main class="t-base">
-        {% block body %}
+        
+    <form action="" class="form js-form">
+        <input type="text" name="Name" placeholder="Name" class="el-field form__input">
+        <input type="number" name="Phone" placeholder="Phone" class="el-field form__input">
+        <input type="email" name="email" placeholder="Email" class="el-field form__input">
+        <button class="btn" type="submit">Send</button>
+    </form>
 
-
-        {% endblock %}
     </main>
 
-    {% block scripts %}
+    
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
 
@@ -45,6 +49,6 @@
             const db = firebase.firestore();
         </script>
         <script src="./js/scripts.js"></script>
-    {% endblock %}
+    
 </body>
 </html>
