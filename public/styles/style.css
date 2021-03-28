@@ -384,13 +384,13 @@ label {
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
     tap-highlight-color: transparent; }
 
-.l-container, .s-hello__container {
+.l-container, .header__container, .s-hello__container, .register__container, .quiz__container {
   max-width: 1220px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px; }
   @media screen and (min-width: 48rem) {
-    .l-container, .s-hello__container {
+    .l-container, .header__container, .s-hello__container, .register__container, .quiz__container {
       padding-left: 40px;
       padding-right: 40px; } }
 
@@ -520,30 +520,101 @@ label {
   .el-field--textarea {
     height: 12.5rem; }
 
+.header {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem; }
+  .header__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
+
 .s-hello {
   padding: 3.75rem 0; }
   .s-hello__line {
     padding-bottom: 2.5rem; }
 
-.form {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 6.25rem; }
-  .form__input {
-    margin-bottom: 1rem; }
-    .form__input:last-child {
-      margin-bottom: 0; }
+.register {
+  padding-top: 4.375rem; }
+  .register__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .register__form-input {
+      margin-bottom: 1rem; }
+      .register__form-input:last-child {
+        margin-bottom: 0; }
+  .register__message {
+    display: none; }
+    .register__message-text {
+      text-align: center; }
+  .register.is-success .register__form {
+    display: none; }
+  .register.is-success .register__message {
+    display: block; }
+
+.quiz {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  .quiz__title {
+    text-align: center;
+    padding-bottom: 1.5625rem; }
+  .quiz__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .quiz__form-label {
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      cursor: pointer;
+      max-width: 6.25rem;
+      text-align: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .quiz__form-label:first-child {
+        margin-right: 1rem; }
+      .quiz__form-label:hover {
+        background-color: #8c3eae;
+        color: #ffffff; }
+      .quiz__form-label:active {
+        background-color: #8c3eae;
+        color: #ffffff; }
+    .quiz__form-input {
+      display: none; }
 
 .t-base {
   -webkit-box-flex: 1;

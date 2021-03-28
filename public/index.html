@@ -13,12 +13,25 @@
 <body>
     <main class="t-base">
         
-    <form action="" class="form js-form">
-        <input type="text" name="Name" placeholder="Name" class="el-field form__input">
-        <input type="number" name="Phone" placeholder="Phone" class="el-field form__input">
-        <input type="email" name="email" placeholder="Email" class="el-field form__input">
-        <button class="btn" type="submit">Send</button>
-    </form>
+    <header class="header">
+    <div class="header__container">
+        <h1 class="header__title el-title">Omeet</h1>
+    </div>
+</header>
+
+    <section class="register" data-register-section>
+    <div class="register__container">
+        <form action="" class="register__form js-form" data-register-form>
+            <input type="text" name="Name" placeholder="Name" class="el-field register__form-input" required>
+            <input type="number" name="Phone" placeholder="Phone" class="el-field register__form-input" required>
+            <input type="email" name="email" placeholder="Email" class="el-field register__form-input" required>
+            <button class="btn" type="submit">Send</button>
+        </form>
+        <div class="register__message">
+            <p class="register__message-text el-subtitle">Ваши данные сохранены, ждите дальнейших рассылок:)</p>
+        </div>
+    </div>
+</section>
 
     </main>
 
