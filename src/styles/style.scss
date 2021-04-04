@@ -22,13 +22,14 @@
 @import "elements/wysiwyg";
 @import "elements/field";
 @import "elements/copy";
+@import "elements/sections";
 
 
 // components
 @import "components/header";
 
 // sections
-@import "sections/hello";
+@import "sections/description";
 @import "sections/register";
 @import "sections/quiz";
 

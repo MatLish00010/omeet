@@ -1,0 +1,11 @@
+.description {
+
+  &__container {
+    @extend .l-container;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+  }
+}
