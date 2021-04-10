@@ -24,6 +24,33 @@
         </div>
     </div>
     <div class="description__content">
-
+        <div class="description__container">
+            <h2 class="description__title el-title">Описание</h2>
+            <div class="description__depiction">
+                {% for item in description.content.listSections %}
+                    <div class="description__section">
+                        {% if item.title %}
+                            <h3 class="description__section-title el-title">{{ item.title }}</h3>
+                        {% endif %}
+                        {% if item.label %}
+                            <p class="description__section-label">{{ item.label }}</p>
+                        {% endif %}
+                        {% if item.description %}
+                            <p class="description__section-desc">{{ item.description }}</p>
+                        {% endif %}
+                        {% if item.link %}
+                            <a class="description__section-link" href="{{ item.link.href }}" target="{{ item.link.target }}">{{ item.link.text }}</a>
+                        {% endif %}
+                        {% if item.itemLists %}
+                            <ul class="description__section-list">
+                                {% for itemList in item.itemLists %}
+                                    <li class="description__section-item">{{ itemList.item }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>

@@ -1,9 +1,13 @@
 .description {
   height: 100vh;
 
+  &__container {
+    @extend .l-container;
+  }
+
   &__timer {
-    height: 20%;
-    padding: px-to-rem(15) 0;
+    min-height: 20%;
+    padding: px-to-rem(50) 0;
     border-bottom: solid $c-accent px-to-rem(1);
     display: flex;
     align-items: center;
@@ -50,6 +54,32 @@
   }
 
   &__content {
-    height: 80%;
+    min-height: 80%;
+    padding-top: px-to-rem(50);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: px-to-rem(36);
+  }
+
+  &__depiction {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__section {
+    &-title {
+      font-size: px-to-rem(20);
+    }
+
+    &-label {
+      font-weight: 500;
+      padding-bottom: px-to-rem(5);
+    }
+
+    &-list {
+      list-style: none;
+    }
   }
 }

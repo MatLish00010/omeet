@@ -41,8 +41,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../artisan-coffee-theme" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,6 +68,7 @@
       <updated>1617016426262</updated>
       <workItem from="1617016428295" duration="1803000" />
       <workItem from="1617352745623" duration="8179000" />
+      <workItem from="1618064472597" duration="3706000" />
     </task>
     <servers />
   </component>
