@@ -1,6 +1,41 @@
 {% set description = {
     timer : {
-        title: 'До события осталось'
+        title: 'Осталось всего:'
+    },
+    content : {
+        listSections: [
+            {
+                title:'Заголовок',
+                label: 'Label',
+                description: 'description'
+            },
+            {
+                title:'Заголовок',
+                label: 'Label',
+                description: 'description',
+                link: {
+                href: '#',
+                target: '_blank',
+                text: 'Link'
+            }
+            },
+            {
+                title:'Заголовок',
+                label: 'Label',
+                description: 'description',
+                itemLists: [
+                {
+                    item: 'item'
+                },
+                {
+                    item: 'item'
+                },
+                {
+                    item: 'item'
+                }
+            ]
+            }
+        ]
     }
 } %}
 <section class="description">
