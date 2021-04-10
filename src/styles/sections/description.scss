@@ -1,11 +1,11 @@
 .description {
+  height: 100vh;
 
-  &__container {
-    @extend .l-container;
+  &__timer {
+    height: 20%;
   }
 
-  &__title {
-    width: 100%;
-    text-align: center;
+  &__content {
+    height: 80%;
   }
 }

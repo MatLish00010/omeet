@@ -338,7 +338,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
-  background: #f2f6fa; }
+  background: #f3eddf; }
   body.stop-scrolling {
     overflow: hidden;
     height: 100%;
@@ -384,22 +384,22 @@ label {
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
     tap-highlight-color: transparent; }
 
-.l-container, .header__container, .s-hello__container, .register__container, .quiz__container {
+.l-container, .header__container, .description__container, .register__container, .quiz__container {
   max-width: 1220px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px; }
   @media screen and (min-width: 48rem) {
-    .l-container, .header__container, .s-hello__container, .register__container, .quiz__container {
+    .l-container, .header__container, .description__container, .register__container, .quiz__container {
       padding-left: 40px;
       padding-right: 40px; } }
 
-.l-text, .el-wysiwyg, .s-hello__line {
+.l-text, .el-wysiwyg {
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 300; }
   @media screen and (min-width: 48rem) {
-    .l-text, .el-wysiwyg, .s-hello__line {
+    .l-text, .el-wysiwyg {
       font-size: 1.125rem; } }
 
 .el-icon {
@@ -422,7 +422,7 @@ label {
 .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  border: 1px solid #8c3eae;
+  border: 1px solid #29b298;
   box-shadow: none;
   border-radius: 0.25em;
   min-width: 210px;
@@ -437,13 +437,13 @@ label {
   position: relative;
   padding: 0.875em 2em;
   overflow: hidden;
-  background: #8c3eae;
+  background: #29b298;
   color: #ffffff; }
   .btn:hover {
-    color: #8c3eae;
+    color: #29b298;
     background: #ffffff; }
   .btn:focus, .btn:active {
-    color: #8c3eae;
+    color: #29b298;
     background: #ffffff; }
   .btn:disabled, .btn.disabled {
     color: rgba(0, 0, 0, 0.4); }
@@ -453,8 +453,7 @@ label {
   font-weight: bold;
   line-height: 1.33;
   padding-bottom: .5em;
-  color: #304e91;
-  max-width: 550px;
+  color: #29b298;
   margin: 0; }
   @media screen and (min-width: 48rem) {
     .el-title {
@@ -520,12 +519,6 @@ label {
   .el-field--textarea {
     height: 12.5rem; }
 
-<<<<<<< HEAD
-.header {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem; }
-  .header__container {
-=======
 .el-copy {
   font-size: 0.875rem;
   line-height: 1.7;
@@ -533,6 +526,15 @@ label {
   .el-copy--lg {
     font-size: 1.125rem;
     line-height: 1.67; }
+
+.el-section {
+  height: 100vh;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem; }
+  @media screen and (min-width: 48rem) {
+    .el-section {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem; } }
 
 .header {
   height: 100vh;
@@ -560,26 +562,19 @@ label {
     -webkit-transform: translate(50%, -50%);
         -ms-transform: translate(50%, -50%);
             transform: translate(50%, -50%);
->>>>>>> master
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-=======
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
->>>>>>> master
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-<<<<<<< HEAD
-    text-align: center; }
-=======
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -599,12 +594,10 @@ label {
       -webkit-transform: translate(0, -50%);
           -ms-transform: translate(0, -50%);
               transform: translate(0, -50%); } }
->>>>>>> master
 
-.s-hello {
-  padding: 3.75rem 0; }
-  .s-hello__line {
-    padding-bottom: 2.5rem; }
+.description__title {
+  width: 100%;
+  text-align: center; }
 
 .register {
   padding-top: 4.375rem; }
@@ -675,10 +668,10 @@ label {
       .quiz__form-label:first-child {
         margin-right: 1rem; }
       .quiz__form-label:hover {
-        background-color: #8c3eae;
+        background-color: #29b298;
         color: #ffffff; }
       .quiz__form-label:active {
-        background-color: #8c3eae;
+        background-color: #29b298;
         color: #ffffff; }
     .quiz__form-input {
       display: none; }
@@ -4033,4 +4026,4 @@ label {
   background: #ffffff; }
 
 .bg-brand {
-  background: #8c3eae; }
+  background: #29b298; }
