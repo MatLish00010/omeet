@@ -1,11 +1,60 @@
 .header {
-  padding-top: px-to-rem(20);
-  padding-bottom: px-to-rem(20);
+  height: 100vh;
+  position: relative;
+
+  &__picture {
+    height: 100%;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $c-black;
+      opacity: 0.6;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 20%;
+    }
+  }
 
   &__container {
     @extend .l-container;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -50%);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+  }
+
+  &__title {
+    color: $c-white;
     text-align: center;
+  }
+
+  &__text {
+    color: $c-white;
+    font-size: px-to-rem(25);
+    font-weight: 400;
+    margin-top: px-to-rem(25);
+    text-align: center;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__container {
+      left: 0;
+      transform: translate(0, -50%);
+    }
   }
 }

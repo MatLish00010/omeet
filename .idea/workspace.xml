@@ -20,16 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05d72460-bb6c-40f4-9964-90097377606b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/styles/components/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/sections/quiz.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/sections/register.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/components/header.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections/quiz.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/sections/register.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/elements/sections.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/sections/description.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/sections/description.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/firebaseLogic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/components/firebaseLogic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/sections/form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/libraries.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/libraries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/elements/title.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables/colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +41,46 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1qQepjd6wEJ2nvk82D5l7wJVw6S" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../artisan-coffee-theme" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\progects\omeet\src\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05d72460-bb6c-40f4-9964-90097377606b" name="Default Changelist" comment="" />
+      <created>1617016426262</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617016426262</updated>
+      <workItem from="1617016428295" duration="1803000" />
+      <workItem from="1617352745623" duration="8179000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -61,12 +92,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="689" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1616938532525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="689" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.5.1920.1040@0.0.1920.1040" timestamp="1616938532525" />
+    <state x="805" y="316" key="FileChooserDialogImpl" timestamp="1617352808121">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="805" y="316" key="FileChooserDialogImpl/-2560.0.2048.1122/0.0.2048.1122@0.0.2048.1122" timestamp="1617352808121" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1616940468622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

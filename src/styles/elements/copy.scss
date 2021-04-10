@@ -1,0 +1,10 @@
+.el-copy {
+  font-size: px-to-rem(14);
+  line-height: 1.7;
+  font-weight: 300;
+
+  &--lg {
+    font-size: px-to-rem(18);
+    line-height: 1.67;
+  }
+}

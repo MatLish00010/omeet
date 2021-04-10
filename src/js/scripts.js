@@ -37,6 +37,7 @@ window.app = {
 
     init() {
         app.initModule(testServerRequest, '.js-test-api');
+
         firebaseLogic();
     }
 
