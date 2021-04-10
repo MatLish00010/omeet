@@ -1,8 +1,16 @@
 .el-title {
-  @include fontSizeResponsive($fs-title-1);
   font-weight: bold;
   line-height: 1.33;
   padding-bottom: .5em;
   color: $c-brand;
   margin: 0;
+  font-size: px-to-rem(20);
+
+  @include media-breakpoint-up(md) {
+    font-size: px-to-rem(30);
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: px-to-rem(35);
+  }
  }

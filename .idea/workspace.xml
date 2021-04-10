@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05d72460-bb6c-40f4-9964-90097377606b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/js/components/timer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/elements/title.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/elements/title.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/sections/description.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/sections/description.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables/colors.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/sections/description.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sections/description.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

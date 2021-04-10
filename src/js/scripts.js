@@ -4,6 +4,7 @@ import scrollLock from 'scroll-lock';
 
 import testServerRequest from './components/test-server-request.js'
 import firebaseLogic from "./components/firebaseLogic";
+import initializeClock from "./components/timer"
 
 svg4everybody();
 
@@ -39,8 +40,10 @@ window.app = {
         app.initModule(testServerRequest, '.js-test-api');
 
         firebaseLogic();
-    }
 
+        const deadline = '2021-08-07';
+        initializeClock(deadline);
+    }
 };
 
 
