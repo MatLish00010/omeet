@@ -39,7 +39,7 @@ window.app = {
     init() {
         app.initModule(testServerRequest, '.js-test-api');
 
-        firebaseLogic();
+        // firebaseLogic();
 
         const deadline = '2021-08-07';
         initializeClock(deadline);
