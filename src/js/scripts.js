@@ -2,9 +2,10 @@
 import svg4everybody from 'svg4everybody';
 import scrollLock from 'scroll-lock';
 
-import testServerRequest from './components/test-server-request.js'
+import testServerRequest from './components/test-server-request.js';
 import firebaseLogic from "./components/firebaseLogic";
-import initializeClock from "./components/timer"
+import initializeClock from "./components/timer";
+import invitation from "./components/invitation";
 
 svg4everybody();
 
@@ -38,6 +39,8 @@ window.app = {
 
     init() {
         app.initModule(testServerRequest, '.js-test-api');
+        app.initModule(invitation, '.js-invitation');
+        firebaseLogic();
 
         // firebaseLogic();
 
