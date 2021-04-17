@@ -1,16 +1,21 @@
 {% set description = {
     timer : {
-        title: 'Осталось всего'
+        title: 'Осталось всего',
+        img:{
+            srcSm:'../images/leaves-sm.png',
+            srcLg: '../images/leaves.png'
+        }
     },
     content : {
+
         listSections: [
             {
-                title:'Заголовок',
+                title:'Дата и время',
                 label: 'Label',
                 description: 'description'
             },
             {
-                title:'Заголовок',
+                title:'Место проведения',
                 label: 'Label',
                 description: 'description',
                 link: {
@@ -20,7 +25,7 @@
             }
             },
             {
-                title:'Заголовок',
+                title:'Особенности мероприятия',
                 label: 'Label',
                 description: 'description',
                 itemLists: [
@@ -57,7 +62,11 @@
                         <span class="description__timer-text">минут</span>
                     </li>
                 </ul>
-                <img class="description__timer-img" src="../images/leaves.svg" alt="">
+                <picture>
+                    <source media="(max-width: 47.95rem)" srcset="{{ description.timer.img.srcSm }}">
+                    <source media="(min-width: 64rem)" srcset="{{ description.timer.img.srcLg }}">
+                    <img src="{{ description.timer.img.srcLg }}" alt="" class="description__timer-img">
+                </picture>
             </div>
         </div>
     </div>

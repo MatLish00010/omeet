@@ -1,0 +1,19 @@
+.s-social {
+  &__container {
+    @extend .l-container;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: "montserratbold", sans-serif;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    font-family: $font-base;
+    font-size: px-to-rem(30);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
