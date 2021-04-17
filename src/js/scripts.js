@@ -42,8 +42,6 @@ window.app = {
         app.initModule(invitation, '.js-invitation');
         firebaseLogic();
 
-        // firebaseLogic();
-
         const deadline = '2021-08-07';
         initializeClock(deadline);
     }

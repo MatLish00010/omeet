@@ -1,8 +1,14 @@
 <div class="c-invitation js-invitation">
     <div class="c-invitation__container">
-        <div class="c-invitation__content">
-            <a href="#" class="c-invitation__link">Не пойду</a>
-            <a href="#" class="c-invitation__link js-going" data-btn-going>Пойду</a>
+        <div class="c-invitation__content is-open" data-invitation-confirmation>
+            <button class="c-invitation__link" data-btn-going="false">Не пойду</button>
+            <button class="c-invitation__link js-going" data-btn-going="true">Пойду</button>
         </div>
+        <form action="" class="c-invitation__form" data-invitation-form>
+            <label for="persons" class="c-invitation__form-label">Количество персон
+                <input type="number" id="persons" class="c-invitation__form-input el-field" value="1">
+            </label>
+            <button class="c-invitation__form-btn btn">Подтвердить</button>
+        </form>
     </div>
 </div>
