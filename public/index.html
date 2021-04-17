@@ -43,7 +43,11 @@
                         <span class="description__timer-text">минут</span>
                     </li>
                 </ul>
-                <img class="description__timer-img" src="../images/leaves.svg" alt="">
+                <picture>
+                    <source media="(max-width: 47.95rem)" srcset="../images/leaves-sm.png">
+                    <source media="(min-width: 64rem)" srcset="../images/leaves.png">
+                    <img src="../images/leaves.png" alt="" class="description__timer-img">
+                </picture>
             </div>
         </div>
     </div>
@@ -54,7 +58,7 @@
                 
                     <div class="description__section">
                         
-                            <h3 class="description__section-title el-title">Заголовок</h3>
+                            <h3 class="description__section-title el-title">Дата и время</h3>
                         
                         
                             <p class="description__section-label">Label</p>
@@ -68,7 +72,7 @@
                 
                     <div class="description__section">
                         
-                            <h3 class="description__section-title el-title">Заголовок</h3>
+                            <h3 class="description__section-title el-title">Место проведения</h3>
                         
                         
                             <p class="description__section-label">Label</p>
@@ -85,7 +89,7 @@
                 
                     <div class="description__section">
                         
-                            <h3 class="description__section-title el-title">Заголовок</h3>
+                            <h3 class="description__section-title el-title">Особенности мероприятия</h3>
                         
                         
                             <p class="description__section-label">Label</p>
@@ -109,6 +113,16 @@
                 
             </div>
         </div>
+    </div>
+</section>
+    
+
+<section class="s-social">
+    <div class="s-social__container">
+        <h2 class="s-social__title el-title">
+            Хэштэг инстаграм
+        </h2>
+        <a class="s-social__link" href="#" target="_blank">@Instagram</a>
     </div>
 </section>
     <div class="c-invitation js-invitation">
