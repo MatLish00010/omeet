@@ -4,7 +4,8 @@
   padding-bottom: .5em;
   color: $c-brand;
   margin: 0;
-  font-size: px-to-rem(20);
+  font-size: px-to-rem(35);
+
 
   @include media-breakpoint-up(md) {
     font-size: px-to-rem(30);

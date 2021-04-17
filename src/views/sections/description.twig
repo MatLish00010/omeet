@@ -1,6 +1,6 @@
 {% set description = {
     timer : {
-        title: 'Осталось всего:'
+        title: 'Осталось всего'
     },
     content : {
         listSections: [
@@ -42,25 +42,28 @@
     <div class="description__timer">
         <div class="description__timer-container">
             <h2 class="description__timer-title el-title">{{ description.timer.title }}</h2>
-            <ul class="description__timer-list" data-countdow>
-                <li class="description__timer-item">
-                    <span class="description__timer-value" data-countdow-days></span>
-                    <span class="description__timer-text">Дней</span>
-                </li>
-                <li class="description__timer-item" data-countdown-number>
-                    <span class="description__timer-value" data-countdow-hours></span>
-                    <span class="description__timer-text">Часов</span>
-                </li>
-                <li class="description__timer-item" data-countdow>
-                    <span class="description__timer-value" data-countdow-minutes></span>
-                    <span class="description__timer-text">Минут</span>
-                </li>
-            </ul>
+            <div class="description__timer-wrap">
+                <ul class="description__timer-list" data-countdow>
+                    <li class="description__timer-item">
+                        <span class="description__timer-value" data-countdow-days></span>
+                        <span class="description__timer-text">дней</span>
+                    </li>
+                    <li class="description__timer-item" data-countdown-number>
+                        <span class="description__timer-value" data-countdow-hours></span>
+                        <span class="description__timer-text">часов</span>
+                    </li>
+                    <li class="description__timer-item" data-countdow>
+                        <span class="description__timer-value" data-countdow-minutes></span>
+                        <span class="description__timer-text">минут</span>
+                    </li>
+                </ul>
+                <img class="description__timer-img" src="../images/leaves.svg" alt="">
+            </div>
         </div>
     </div>
     <div class="description__content">
         <div class="description__container">
-            <h2 class="description__title el-title">Описание</h2>
+            <h2 class="description__title el-title">Программа мероприятия</h2>
             <div class="description__depiction">
                 {% for item in description.content.listSections %}
                     <div class="description__section">
@@ -74,7 +77,8 @@
                             <p class="description__section-desc">{{ item.description }}</p>
                         {% endif %}
                         {% if item.link %}
-                            <a class="description__section-link" href="{{ item.link.href }}" target="{{ item.link.target }}">{{ item.link.text }}</a>
+                            <a class="description__section-link" href="{{ item.link.href }}"
+                               target="{{ item.link.target }}">{{ item.link.text }}</a>
                         {% endif %}
                         {% if item.itemLists %}
                             <ul class="description__section-list">
