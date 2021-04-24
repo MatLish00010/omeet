@@ -5,7 +5,6 @@
   &__picture {
     height: 100%;
 
-
     &::after {
       content: "";
       position: absolute;
@@ -41,6 +40,11 @@
   &__title {
     color: $c-white;
     text-align: center;
+    font-family: $font-main;
+    font-size: px-to-rem(55);
+    letter-spacing: px-to-rem(4);
+    font-weight: 500;
+    line-height: 1;
   }
 
   &__text {
@@ -55,6 +59,10 @@
     &__container {
       left: 0;
       transform: translate(0, -50%);
+    }
+
+    &__title {
+      font-size: px-to-rem(75);
     }
   }
 }
