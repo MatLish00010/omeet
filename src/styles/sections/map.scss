@@ -1,14 +1,12 @@
 .s-map {
   min-height: 60vh;
   padding-top: px-to-rem(60);
-  padding-bottom: px-to-rem(60);
-  background: $c-main-bg;
+  background: $c-white;
 
   #map {
     height: 60vh;
   }
   @include media-breakpoint-up(lg){
     padding-top: px-to-rem(100);
-    padding-bottom: px-to-rem(100);
   }
 }

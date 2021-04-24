@@ -18,8 +18,9 @@
                 title:'Место проведения',
                 label: 'Label',
                 description: 'description',
+                mod: 'js-scroll-animation',
                 link: {
-                href: '#',
+                href: '#map-section',
                 target: '_blank',
                 text: 'Link'
             }
@@ -86,7 +87,7 @@
                             <p class="description__section-desc">{{ item.description }}</p>
                         {% endif %}
                         {% if item.link %}
-                            <a class="description__section-link" href="{{ item.link.href }}"
+                            <a class="description__section-link {{ item.mod }}" href="{{ item.link.href }}"
                                target="{{ item.link.target }}">{{ item.link.text }}</a>
                         {% endif %}
                         {% if item.itemLists %}
