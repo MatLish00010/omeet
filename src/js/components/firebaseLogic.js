@@ -10,7 +10,6 @@ export default function firebaseLogic() {
     const buttons = confirmation.querySelectorAll('[data-btn-going]');
     const form = invitation.querySelector('[data-invitation-form]');
 
-
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             if (btn.dataset.btnGoing === 'true') {
@@ -24,7 +23,7 @@ export default function firebaseLogic() {
                 db.collection('users').doc(id).update({
                     Coming: false
                 })
-                confirmation.classList.remove(config.openClass);
+                invitation.classList.remove(config.openClass);
             }
         })
     })
