@@ -1,0 +1,12 @@
+.el-link {
+  display: block;
+  text-align: center;
+  font-family: $font-base;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+    color: $c-brand;
+  }
+}

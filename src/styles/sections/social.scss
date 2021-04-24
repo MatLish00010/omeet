@@ -13,11 +13,25 @@
   }
 
   &__link {
-    display: block;
-    text-align: center;
-    font-family: $font-base;
     font-size: px-to-rem(30);
     text-transform: uppercase;
-    text-decoration: none;
+  }
+
+  &__phone {
+    list-style-type: none;
+    text-align: center;
+    padding-top: px-to-rem(70);
+
+    &-item {
+      margin-bottom: px-to-rem(30);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-title {
+      margin-bottom: px-to-rem(10);
+    }
   }
 }

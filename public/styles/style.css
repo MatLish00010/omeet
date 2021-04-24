@@ -558,6 +558,19 @@ label {
       padding-top: 3.75rem;
       padding-bottom: 3.75rem; } }
 
+.el-link {
+  display: block;
+  text-align: center;
+  font-family: "montserratregular", sans-serif;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .el-link:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    color: #23A68D; }
+
 .header {
   height: 100vh;
   position: relative; }
@@ -1047,12 +1060,28 @@ label {
     text-align: center;
     font-family: "montserratbold", sans-serif; }
   .s-social__link {
-    display: block;
-    text-align: center;
-    font-family: "montserratregular", sans-serif;
     font-size: 1.875rem;
-    text-transform: uppercase;
-    text-decoration: none; }
+    text-transform: uppercase; }
+  .s-social__phone {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 4.375rem; }
+    .s-social__phone-item {
+      margin-bottom: 1.875rem; }
+      .s-social__phone-item:last-child {
+        margin-bottom: 0; }
+    .s-social__phone-title {
+      margin-bottom: 0.625rem; }
+
+.s-map {
+  min-height: 60vh;
+  padding-top: 3.75rem;
+  background: #ffffff; }
+  .s-map #map {
+    height: 60vh; }
+  @media screen and (min-width: 64.0625rem) {
+    .s-map {
+      padding-top: 6.25rem; } }
 
 .t-base {
   -webkit-box-flex: 1;
