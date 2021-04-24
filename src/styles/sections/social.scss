@@ -1,4 +1,8 @@
 .s-social {
+  padding-top: px-to-rem(60);
+  padding-bottom: px-to-rem(60);
+  background-color: $c-white;
+
   &__container {
     @extend .l-container;
   }

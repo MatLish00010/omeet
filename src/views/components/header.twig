@@ -1,13 +1,19 @@
 {% set header = {
     title: "Свадьба Александра и Виолетты",
-    text: "Вы приглашены на свадьбу"
+    text: "Вы приглашены на свадьбу",
+    lint_text: "Подробная информация ниже"
 } %}
 <header class="header">
     <div class="header__picture">
         <img src="./images/IMG_2036.JPG" alt="" class="header__picture-img">
+
     </div>
     <div class="header__container">
         <h1 class="header__title el-title">{{ header.title }}</h1>
         <p class="header__text el-title" data-header-invitation-text>{{ header.text }}</p>
     </div>
+    <a href="#description" class="header__down js-scroll-animation">
+        {{ header.lint_text }}
+        {% include "components/svg_inline.twig"  with { name: "ic-arrow", modifier: 'header__down-icon' } %}
+    </a>
 </header>

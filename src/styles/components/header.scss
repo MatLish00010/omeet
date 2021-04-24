@@ -29,7 +29,7 @@
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(50% , -50%);
+    transform: translate(50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,14 +55,41 @@
     text-align: center;
   }
 
+  &__down {
+    position: absolute;
+    color: $c-white;
+    font-size: px-to-rem(20);
+    right: 50%;
+    transform: translateX(50%);
+    bottom: px-to-rem(20);
+    padding: px-to-rem(15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+
+    &-icon {
+      margin-top: px-to-rem(20);
+      transform: rotate(90deg);
+    }
+
+    &:hover {
+      color: $c-brand;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__title {
+      font-size: px-to-rem(75);
+    }
+  }
+
   @include media-breakpoint-up(lg) {
     &__container {
       left: 0;
       transform: translate(0, -50%);
-    }
-
-    &__title {
-      font-size: px-to-rem(75);
     }
   }
 }
