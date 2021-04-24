@@ -24,6 +24,7 @@ export default function firebaseLogic() {
                 db.collection('users').doc(id).update({
                     Coming: false
                 })
+                confirmation.classList.remove(config.openClass);
             }
         })
     })
