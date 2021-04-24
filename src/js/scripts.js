@@ -3,6 +3,7 @@ import svg4everybody from 'svg4everybody';
 import scrollLock from 'scroll-lock';
 
 import testServerRequest from './components/test-server-request.js';
+import map from './components/map.js';
 import firebaseLogic from "./components/firebaseLogic";
 import initializeClock from "./components/timer";
 import invitation from "./components/invitation";

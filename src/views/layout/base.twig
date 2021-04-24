@@ -2,49 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,600&display=swap"
+          rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b4d3c777-8513-48a2-8c2e-b90fa6ca5790
+&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
-    <main class="t-base">
-        {% block body %}
+<main class="t-base">
+    {% block body %}
 
 
-        {% endblock %}
-    </main>
-
-    {% block scripts %}
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-             https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-
-        <script>
-            // Your web app's Firebase configuration
-            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            var firebaseConfig = {
-                apiKey: "AIzaSyAkMTAJmao80iqQ4LdxpVtYfPgww4y1dS0",
-                authDomain: "omeet-demo.firebaseapp.com",
-                projectId: "omeet-demo",
-                storageBucket: "omeet-demo.appspot.com",
-                messagingSenderId: "651862335518",
-                appId: "1:651862335518:web:f6d128422dd43c823d8e0f",
-                measurementId: "G-SYVH46QBLS"
-            };
-            // Initialize Firebase
-            firebase.initializeApp(firebaseConfig);
-            firebase.analytics();
-            const db = firebase.firestore();
-        </script>
-        <script src="./js/scripts.js"></script>
     {% endblock %}
+</main>
+
+{% block scripts %}
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAkMTAJmao80iqQ4LdxpVtYfPgww4y1dS0",
+            authDomain: "omeet-demo.firebaseapp.com",
+            projectId: "omeet-demo",
+            storageBucket: "omeet-demo.appspot.com",
+            messagingSenderId: "651862335518",
+            appId: "1:651862335518:web:f6d128422dd43c823d8e0f",
+            measurementId: "G-SYVH46QBLS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+    </script>
+    <script src="./js/scripts.js"></script>
+{% endblock %}
 </body>
 </html>
