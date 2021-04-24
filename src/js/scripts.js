@@ -27,7 +27,7 @@ window.app = {
             item.setAttribute('inert', true);
         })
     },
-    
+
     removeInert(...args) {
         args.forEach(item => {
             item.removeAttribute('inert');
