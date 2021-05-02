@@ -12,8 +12,9 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: $c-black;
-      opacity: 0.6;
+      background: linear-gradient(
+                      90.49deg, rgba(11, 10, 10, 0.45) -0.97%, rgba(13, 13, 13, 0.63) 29.5%, rgba(16, 16, 16, 0.32) 53.94%), linear-gradient(
+                      0deg, rgba(78, 65, 51, 0.15), rgba(78, 65, 51, 0.15));
     }
 
     &-img {
@@ -48,7 +49,7 @@
   }
 
   &__text {
-    color: $c-white;
+    color: $c-white-light;
     font-size: px-to-rem(25);
     font-weight: 400;
     margin-top: px-to-rem(25);

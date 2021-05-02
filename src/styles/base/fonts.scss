@@ -13,12 +13,11 @@
   font-style: normal;
 }
 
-
-
 @font-face {
-  font-family: "zapfino";
+  font-family: "odessa";
   font-display: swap;
-  src: url("../fonts/Zapfino.ttf");
+  src: url("../fonts/odessapcforserge-medium.woff2") format("woff2"),
+  url("../fonts/odessapcforserge-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
