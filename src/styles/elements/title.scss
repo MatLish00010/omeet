@@ -1,18 +1,18 @@
 .el-title {
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1.33;
   //padding-bottom: .5em;
   margin-bottom: px-to-rem(50);
   margin-top: px-to-rem(20);
   color: $c-brand;
-  font-size: px-to-rem(35);
+  font-size: px-to-rem(20);
 
 
   @include media-breakpoint-up(md) {
-    font-size: px-to-rem(30);
+    font-size: px-to-rem(28);
   }
 
   @include media-breakpoint-up(lg) {
-    font-size: px-to-rem(35);
+    font-size: px-to-rem(32);
   }
  }

@@ -7,6 +7,9 @@
 
   &:hover {
     transform: scale(1.2);
-    color: $c-brand;
+    background: linear-gradient(274.88deg, #D8A74C 24.05%, #E9BD62 46.55%, #FFDB94 57.51%, #EEC36B 73.1%, #D09D41 91.16%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;;
   }
 }
