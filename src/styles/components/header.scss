@@ -60,8 +60,8 @@
 
   &__down {
     position: absolute;
+    font-size: px-to-rem(12);
     color: $c-white-light;
-    font-size: px-to-rem(20);
     right: 50%;
     transform: translateX(50%);
     bottom: px-to-rem(20);
