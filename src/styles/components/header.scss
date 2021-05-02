@@ -28,8 +28,8 @@
     @extend .l-container;
     position: absolute;
     top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
+    //right: 50%;
+    transform: translateY( -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,13 +43,14 @@
     font-family: $font-main;
     font-size: px-to-rem(55);
     letter-spacing: px-to-rem(4);
+    margin-bottom: 0;
     font-weight: 500;
     line-height: 1;
   }
 
   &__text {
     color: $c-white;
-    font-size: px-to-rem(25);
+    font-size: px-to-rem(20);
     font-weight: 400;
     margin-top: px-to-rem(25);
     text-align: center;
@@ -58,7 +59,7 @@
   &__down {
     position: absolute;
     color: $c-white;
-    font-size: px-to-rem(20);
+    font-size: px-to-rem(12);
     right: 50%;
     transform: translateX(50%);
     bottom: px-to-rem(20);

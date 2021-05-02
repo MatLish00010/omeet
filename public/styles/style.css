@@ -593,10 +593,9 @@ label {
   .header__container {
     position: absolute;
     top: 50%;
-    right: 50%;
-    -webkit-transform: translate(50%, -50%);
-        -ms-transform: translate(50%, -50%);
-            transform: translate(50%, -50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -620,18 +619,19 @@ label {
     font-family: "zapfino", sans-serif;
     font-size: 3.4375rem;
     letter-spacing: 0.25rem;
+    margin-bottom: 0;
     font-weight: 500;
     line-height: 1; }
   .header__text {
     color: #ffffff;
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     font-weight: 400;
     margin-top: 1.5625rem;
     text-align: center; }
   .header__down {
     position: absolute;
     color: #ffffff;
-    font-size: 1.25rem;
+    font-size: 0.75rem;
     right: 50%;
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
@@ -711,16 +711,16 @@ label {
       display: -ms-flexbox;
       display: flex; }
   .c-invitation__link {
-    min-width: 9.375rem;
     width: 100%;
     background: #F8F4EB;
-    padding: 0.625rem 1.875rem;
+    padding: 0.625rem 1.25rem;
     text-decoration: none;
     -webkit-transition: background-color .5s;
     transition: background-color .5s;
     white-space: nowrap;
     margin-right: 2.5rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 0.9375rem; }
     .c-invitation__link:last-child {
       margin-right: 0; }
     .c-invitation__link:hover {
