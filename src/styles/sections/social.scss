@@ -1,8 +1,10 @@
 .s-social {
-  padding-top: px-to-rem(60);
-  padding-bottom: px-to-rem(60);
+  //padding-top: px-to-rem(60);
+  //padding-bottom: px-to-rem(60);
+  padding: px-to-rem(30) 0;
   background-color: $c-white;
   background: linear-gradient(0deg, #EFE2E0 0.17%, #FFFFFF 39.54%, rgba(255, 255, 255, 0.97) 66.75%, rgba(255, 255, 255, 0.21) 100%);
+  text-align: center;
 
   &__container {
     @extend .l-container;
@@ -10,18 +12,26 @@
 
   &__title {
     text-align: center;
-    font-family: "montserratbold", sans-serif;
+    margin-bottom: px-to-rem(30);
   }
 
   &__link {
-    font-size: px-to-rem(30);
+    //font-size: px-to-rem(30);
+    font-size: px-to-rem(18);
     text-transform: uppercase;
+    display: inline-block;
+    width: auto;
   }
 
   &__phone {
     list-style-type: none;
     text-align: center;
-    padding-top: px-to-rem(70);
+    //padding-top: px-to-rem(70);
+    padding-top: px-to-rem(30);
+    &-number {
+      display: inline-block;
+      width: auto;
+    }
 
     &-item {
       margin-bottom: px-to-rem(30);
@@ -33,6 +43,12 @@
 
     &-title {
       margin-bottom: px-to-rem(10);
+      font-family: $font-main;
+      font-style: normal;
+      font-weight: normal;
+      //font-size: px-to-rem(50);
+      font-size: px-to-rem(42);
+      line-height: px-to-rem(54);
     }
   }
 }
