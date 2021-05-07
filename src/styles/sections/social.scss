@@ -1,6 +1,4 @@
 .s-social {
-  //padding-top: px-to-rem(60);
-  //padding-bottom: px-to-rem(60);
   padding: px-to-rem(30) 0;
   background-color: $c-white;
   background: linear-gradient(0deg, #EFE2E0 0.17%, #FFFFFF 39.54%, rgba(255, 255, 255, 0.97) 66.75%, rgba(255, 255, 255, 0.21) 100%);
@@ -16,9 +14,7 @@
   }
 
   &__link {
-    //font-size: px-to-rem(30);
     font-size: px-to-rem(18);
-    text-transform: uppercase;
     display: inline-block;
     width: auto;
   }

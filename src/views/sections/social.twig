@@ -1,6 +1,6 @@
 {% set social = {
     name: '#alexviowedding',
-    link: '#',
+    link: 'https://www.instagram.com/explore/tags/alexviowedding',
     phone: [
         {
             name: 'Александр',
@@ -19,7 +19,7 @@
         <h2 class="s-social__title el-title">
             Хэштэг инстаграм
         </h2>
-        <a class="s-social__link el-link el-gradient-text" href="{{ social.link }}" target="_blank">{{ social.name }}</a>
+        <a class="s-social__link el-link" href="{{ social.link }}" target="_blank">{{ social.name }}</a>
         <ul class="s-social__phone">
             {% for item in social.phone %}
                 <li class="s-social__phone-item">
