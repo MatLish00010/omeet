@@ -470,22 +470,14 @@ label {
     color: rgba(0, 0, 0, 0.4); }
 
 .el-title {
-  font-weight: 500;
-  line-height: 1.33;
+  font-style: normal;
+  font-weight: normal;
   margin-bottom: 0.625rem;
   margin-top: 1.25rem;
   color: #5E5A56;
-  font-size: 1.25rem;
-  font-family: "montserratregular", sans-serif;
-  text-transform: uppercase; }
-  @media screen and (min-width: 48rem) {
-    .el-title {
-      font-size: 1.75rem;
-      margin-bottom: 3.125rem;
-      margin-top: 1.25rem; } }
-  @media screen and (min-width: 64.0625rem) {
-    .el-title {
-      font-size: 2rem; } }
+  font-family: "odessa", sans-serif;
+  font-size: 2.625rem;
+  line-height: 3.375rem; }
 
 .el-subtitle {
   font-size: 1.5rem;
@@ -603,11 +595,13 @@ label {
       object-fit: cover;
       object-position: 50% 20%; }
   .header__container {
+    width: 100%;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -634,11 +628,11 @@ label {
     margin-bottom: 0;
     font-weight: 500;
     line-height: 1;
-    max-width: 34.375rem;
+    max-width: 22.875rem;
     text-transform: none; }
   .header__text {
     color: #F1E5E2;
-    font-size: 1.5625rem;
+    font-size: 2.5rem;
     font-weight: 400;
     margin-top: 1.5625rem;
     text-align: center; }
@@ -650,7 +644,7 @@ label {
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
             transform: translateX(50%);
-    bottom: 1.25rem;
+    bottom: 0;
     padding: 0.9375rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -672,7 +666,7 @@ label {
     text-decoration: none;
     text-align: center; }
     .header__down-icon {
-      margin-top: 1.25rem;
+      margin-top: 0.625rem;
       -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
               transform: rotate(90deg); }
@@ -684,12 +678,6 @@ label {
   @media screen and (min-width: 48rem) {
     .header__title {
       font-size: 4.6875rem; } }
-  @media screen and (min-width: 64.0625rem) {
-    .header__container {
-      left: 0;
-      -webkit-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-              transform: translate(0, -50%); } }
 
 .c-invitation {
   position: fixed;
@@ -818,7 +806,7 @@ label {
       width: 100%;
       margin: 1.875rem auto 0 auto;
       background: rgba(255, 255, 255, 0.8);
-      box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15), inset 0px 0px 5px #FFFFFF;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15), inset 0px 0px 5px #FFFFFF;
       z-index: 2; }
     .description__timer-list {
       list-style-type: none;
@@ -929,12 +917,9 @@ label {
       margin-bottom: 0; }
     .description__section-title {
       font-size: 2.125rem;
-      line-height: 2.75rem;
       text-align: center;
       width: 100%;
       padding: 10px 0;
-      font-family: "odessa", sans-serif;
-      font-weight: normal;
       color: #737373; }
     .description__section-label {
       font-weight: 500;
@@ -1108,8 +1093,7 @@ label {
   background: linear-gradient(0deg, #EFE2E0 0.17%, #FFFFFF 39.54%, rgba(255, 255, 255, 0.97) 66.75%, rgba(255, 255, 255, 0.21) 100%);
   text-align: center; }
   .s-social__title {
-    text-align: center;
-    margin-bottom: 1.875rem; }
+    text-align: center; }
   .s-social__link {
     font-size: 1.125rem;
     display: inline-block;
@@ -1126,12 +1110,7 @@ label {
       .s-social__phone-item:last-child {
         margin-bottom: 0; }
     .s-social__phone-title {
-      margin-bottom: 0.625rem;
-      font-family: "odessa", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 2.625rem;
-      line-height: 3.375rem; }
+      margin-bottom: 0.625rem; }
 
 .s-map {
   min-height: 60vh;
