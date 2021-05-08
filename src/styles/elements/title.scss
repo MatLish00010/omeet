@@ -1,20 +1,10 @@
 .el-title {
-  font-weight: 500;
-  line-height: 1.33;
+  font-style: normal;
+  font-weight: normal;
   margin-bottom: px-to-rem(10);
   margin-top: px-to-rem(20);
   color: $c-brand;
-  font-size: px-to-rem(20);
-  font-family: $font-base;
-  text-transform: uppercase;
-
-  @include media-breakpoint-up(md) {
-    font-size: px-to-rem(28);
-    margin-bottom: px-to-rem(50);
-    margin-top: px-to-rem(20);
-  }
-
-  @include media-breakpoint-up(lg) {
-    font-size: px-to-rem(32);
-  }
+  font-family: $font-main;
+  font-size: px-to-rem(42);
+  line-height: px-to-rem(54);
  }

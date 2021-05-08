@@ -10,7 +10,6 @@
 
   &__title {
     text-align: center;
-    margin-bottom: px-to-rem(30);
   }
 
   &__link {
@@ -22,8 +21,8 @@
   &__phone {
     list-style-type: none;
     text-align: center;
-    //padding-top: px-to-rem(70);
     padding-top: px-to-rem(30);
+
     &-number {
       display: inline-block;
       width: auto;
@@ -39,12 +38,6 @@
 
     &-title {
       margin-bottom: px-to-rem(10);
-      font-family: $font-main;
-      font-style: normal;
-      font-weight: normal;
-      //font-size: px-to-rem(50);
-      font-size: px-to-rem(42);
-      line-height: px-to-rem(54);
     }
   }
 }

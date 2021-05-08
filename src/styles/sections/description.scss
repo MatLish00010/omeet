@@ -7,7 +7,6 @@
 
   &__timer {
     min-height: 20%;
-    //padding: px-to-rem(50) 0;
     padding: px-to-rem(20) 0;
     display: flex;
     align-items: center;
@@ -30,20 +29,16 @@
       font-family: $font-base;
       line-height: px-to-rem(50);
       text-transform: uppercase;
-
     }
 
     &-wrap {
       position: relative;
-      //padding: px-to-rem(10);
       padding: px-to-rem(5);
-      //max-width: px-to-rem(380);
       max-width: px-to-rem(230);
       width: 100%;
-      //margin: px-to-rem(100) auto 0 auto;
       margin: px-to-rem(30) auto 0 auto;
       background: rgba(255, 255, 255, 0.8);
-      box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.15), inset 0px 0px 5px #FFFFFF;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15), inset 0px 0px 5px #FFFFFF;
       z-index: 2;
     }
 
@@ -52,8 +47,6 @@
       display: flex;
       justify-content: center;
       background: $c-white;
-      //gap: px-to-rem(20);
-      //padding: px-to-rem(40) px-to-rem(20);
       padding: px-to-rem(12) px-to-rem(20);
       border: 2px solid rgba(115, 115, 115, 0.2);
     }
@@ -75,7 +68,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      //margin-right: px-to-rem(20);
 
       &:last-child {
         margin-right: 0;
@@ -87,9 +79,7 @@
       justify-content: center;
       align-items: center;
       font-weight: 600;
-      //margin-bottom: px-to-rem(10);
       font-family: $font-base-bold;
-      //font-size: px-to-rem(30);
       font-size: px-to-rem(18);
       line-height: px-to-rem(36);
     }
@@ -98,7 +88,6 @@
       font-weight: 500;
       color: $c-text;
       font-family: $font-main;
-      //font-size: px-to-rem(50);
       padding: 0 px-to-rem(10);
       font-size: px-to-rem(26);
       line-height: px-to-rem(36);
@@ -106,9 +95,6 @@
   }
 
   &__content {
-    //padding-bottom: px-to-rem(50);
-    //padding-top: px-to-rem(50);
-
     padding: px-to-rem(30) 0;
     min-height: 80%;
   }
@@ -142,17 +128,10 @@
     }
 
     &-title {
-      //font-size: px-to-rem(50);
       font-size: px-to-rem(34);
-      line-height: 2.75rem;
       text-align: center;
       width: 100%;
-      //padding-bottom: 0;
       padding: 10px 0;
-
-      //margin-bottom: 2rem;
-      font-family: $font-main;
-      font-weight: normal;
       color: $c-text;
     }
 
@@ -239,13 +218,11 @@
       }
     }
     &__timer {
-      //padding-bottom: px-to-rem(100);
       padding-top: px-to-rem(40);
       padding-bottom: px-to-rem(40);
 
       &-list {
         padding: px-to-rem(50) px-to-rem(90) px-to-rem(30) px-to-rem(90);
-        //gap: px-to-rem(50);
       }
 
       &-item {
@@ -258,7 +235,6 @@
         padding: px-to-rem(25);
         max-width: px-to-rem(440);
         width: 100%;
-        //margin: px-to-rem(120) auto 0 auto;
         margin: px-to-rem(90) auto 0 auto;
         z-index: 2;
       }
@@ -308,5 +284,4 @@
       padding-bottom: px-to-rem(90);
     }
   }
-
 }

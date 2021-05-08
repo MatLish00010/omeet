@@ -16,14 +16,14 @@
 
 <section class="s-social">
     <div class="s-social__container">
-        <h2 class="s-social__title el-title">
+        <h2 class="s-social__title el-gradient-text el-title">
             Хэштэг инстаграм
         </h2>
         <a class="s-social__link el-link" href="{{ social.link }}" target="_blank">{{ social.name }}</a>
         <ul class="s-social__phone">
             {% for item in social.phone %}
                 <li class="s-social__phone-item">
-                    <h3 class="s-social__phone-title">{{ item.name }}</h3>
+                    <h3 class="s-social__phone-title  el-title">{{ item.name }}</h3>
                     <a href="tel:{{ item.phone }}" class="s-social__phone-number el-link">{{ item.phone }}</a>
                 </li>
             {% endfor %}

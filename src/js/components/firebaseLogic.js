@@ -35,7 +35,8 @@ export default function firebaseLogic() {
             if (doc.id === id) {
 
                 let data = doc.data();
-                headerText.innerText = `${data.Name}, вы приглашены на свадьбу`;
+                headerText.innerText = `${data.Name} 
+                Вы приглашены на свадьбу`;
 
                 !data.Coming ? invitation.classList.add(config.openClass) : null;
             }
