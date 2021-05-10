@@ -1097,7 +1097,8 @@ label {
   background: linear-gradient(0deg, #EFE2E0 0.17%, #FFFFFF 39.54%, rgba(255, 255, 255, 0.97) 66.75%, rgba(255, 255, 255, 0.21) 100%);
   text-align: center; }
   .s-social__title {
-    text-align: center; }
+    text-align: center;
+    font-size: 2.125rem; }
   .s-social__link {
     font-size: 1.125rem;
     display: inline-block;
