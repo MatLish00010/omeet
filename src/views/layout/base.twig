@@ -13,11 +13,15 @@
     </script>
 </head>
 <body>
+{% include 'components/header.twig' %}
 <main class="t-base">
     {% block body %}
 
 
     {% endblock %}
+    <footer class="footer">
+        {% include 'sections/map.twig' %}
+    </footer>
 </main>
 
 {% block scripts %}
