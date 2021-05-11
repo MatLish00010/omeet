@@ -917,20 +917,24 @@ label {
     margin-right: 0;
     margin-bottom: 0; }
   .description__section-title {
-    font-size: 2.125rem;
+    font-size: 2.8125rem;
     text-align: center;
     width: 100%;
     padding: 10px 0;
     color: #737373; }
   .description__section-label {
     font-weight: 500;
+    font-size: 1.1875rem;
     padding-bottom: 0.3125rem;
     text-align: center; }
   .description__section-desc {
     text-align: center;
+    font-size: 1.1875rem;
     margin-bottom: 1rem; }
   .description__section-list {
     list-style: none; }
+  .description__section-link {
+    font-size: 1.1875rem; }
 
 @media screen and (min-width: 30rem) {
   .description__timer-wrap {
@@ -1098,7 +1102,7 @@ label {
   text-align: center; }
   .s-social__title {
     text-align: center;
-    font-size: 2.125rem; }
+    font-size: 2.8125rem; }
   .s-social__link {
     font-size: 1.125rem;
     display: inline-block;

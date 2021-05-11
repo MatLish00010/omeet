@@ -127,7 +127,7 @@
     }
 
     &-title {
-      font-size: px-to-rem(34);
+      font-size: px-to-rem(45);
       text-align: center;
       width: 100%;
       padding: 10px 0;
@@ -136,17 +136,23 @@
 
     &-label {
       font-weight: 500;
+      font-size: px-to-rem(19);
       padding-bottom: px-to-rem(5);
       text-align: center;
     }
 
     &-desc {
       text-align: center;
+      font-size: px-to-rem(19);
       margin-bottom: px-to-rem(16);
     }
 
     &-list {
       list-style: none;
+    }
+
+    &-link {
+      font-size: px-to-rem(19);
     }
   }
 
