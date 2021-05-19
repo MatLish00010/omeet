@@ -29,7 +29,7 @@
     @extend .l-container;
     width: auto;
     position: absolute;
-    top: 50%;
+    top: 58%;
     right: 0;
     transform: translateY(-50%);
     display: flex;
@@ -90,6 +90,12 @@
   @include media-breakpoint-up(md) {
     &__title {
       font-size: px-to-rem(75);
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__container {
+      top: 50%;
     }
   }
 }

@@ -597,7 +597,7 @@ label {
   .header__container {
     width: auto;
     position: absolute;
-    top: 50%;
+    top: 58%;
     right: 0;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -678,6 +678,9 @@ label {
   @media screen and (min-width: 48rem) {
     .header__title {
       font-size: 4.6875rem; } }
+  @media screen and (min-width: 64.0625rem) {
+    .header__container {
+      top: 50%; } }
 
 .c-invitation {
   position: fixed;
